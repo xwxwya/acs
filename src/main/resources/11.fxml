@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cwmp="urn:dslforum-org:cwmp-1-0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema/instance/" xmlns:xsd="http://www.w3.org/2001/XMLSchema/">
+    <soap:Body>
+        <cwmp:Inform>
+            <HardwareVersion>h.1.0.0.0</HardwareVersion>
+            <SoftwareVersion>s.0.0.1.1</SoftwareVersion>
+            <IPAddress>192.168.110.99</IPAddress>
+            <ConnectionRequestURL>http://192.168.110.99:9999</ConnectionRequestURL>
+            <CurrentLocalTime>2021-10-28T09:09:19</CurrentLocalTime>
+            <LocalTimeZone>+00:00</LocalTimeZone>
+            <DeviceId xsi:type="cwmp:DeviceIdStruct">
+                <Manufacturer>GDT</Manufacturer>
+                <OUI>123456</OUI>
+                <ProductClass>STBID</ProductClass>
+                <SerialNumber>AAAA-BBBB-CCCC-DDDD</SerialNumber>
+            </DeviceId>
+            <Event soap:arrayType="cwmp:EventStruct[1]">
+                <EventCode>0 BOOTSTRAP</EventCode>
+                <CommandKey></CommandKey>
+            </Event>
+            <MaxEnvelopes>1</MaxEnvelopes>
+            <CurrentTime>2021-10-28T09:09:19</CurrentTime>
+            <RetryCount>0</RetryCount>
+            <ParameterList soap:arrayType="cwmp:ParameterValueStruct[1]">
+                <ParameterValueStruct>
+                    <Name>Device.X_STB_SoftwareConfig.CurrentSoftwareList</Name>
+                    <Value></Value>
+                </ParameterValueStruct>
+            </ParameterList>
+        </cwmp:Inform>
+    </soap:Body>
+</soap:Envelope>
